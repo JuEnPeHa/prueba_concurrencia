@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prueba_concurrencia/ejemplos/ejemplo_async.dart';
+import 'package:prueba_concurrencia/ejemplos/ejemplo_isolate_compute.dart';
 
 void main() {
   runApp(const MainApp());
@@ -35,6 +36,15 @@ class DemoConcurrencia extends StatelessWidget {
                 );
               },
               child: const Text('Ejemplo Async'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const TareaPesada()),
+                );
+              },
+              child: const Text('Ejemplo Compute Isolate'),
             ),
           ],
         ),
