@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prueba_concurrencia/ejemplos/ejemplo_async.dart';
+import 'package:prueba_concurrencia/ejemplos/ejemplo_isolate_complejo.dart';
 import 'package:prueba_concurrencia/ejemplos/ejemplo_isolate_compute.dart';
 
 void main() {
@@ -45,6 +46,17 @@ class DemoConcurrencia extends StatelessWidget {
                 );
               },
               child: const Text('Ejemplo Compute Isolate'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const IsolateComplejo(),
+                  ),
+                );
+              },
+              child: const Text('Ejemplo Isolate Complejo'),
             ),
           ],
         ),
