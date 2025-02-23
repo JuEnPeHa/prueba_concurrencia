@@ -1,1 +1,0 @@
-C:\Users\juan\Documents\guides\prueba_concurrencia\build\app\intermediates\cxx\Debug\k4i3p3v6\obj\arm64-v8a

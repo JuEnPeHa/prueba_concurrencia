@@ -1,2 +1,0 @@
-C:/Users/juan/Documents/guides/prueba_concurrencia/android/app/.cxx/Debug/k4i3p3v6/armeabi-v7a/CMakeFiles/edit_cache.dir
-C:/Users/juan/Documents/guides/prueba_concurrencia/android/app/.cxx/Debug/k4i3p3v6/armeabi-v7a/CMakeFiles/rebuild_cache.dir
