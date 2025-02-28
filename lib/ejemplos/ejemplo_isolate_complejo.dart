@@ -99,7 +99,7 @@ class _IsolateComplejoState extends State<IsolateComplejo> {
 }
 
 // Función que se ejecuta en el isolate
-void fibonacciIsolateEntry(List<dynamic> args) {
+Future<void> fibonacciIsolateEntry(List<dynamic> args) async {
   final SendPort sendPort = args[0];
   final int max = args[1];
   final int updateInterval = args[2];
@@ -119,6 +119,7 @@ void fibonacciIsolateEntry(List<dynamic> args) {
       sendPort.send("Iteración $i:\n$n1,$n2,$n3");
       // Reiniciamos el acumulador para la siguiente actualización
       partialResult = "";
+      await Future.delayed(const Duration(seconds: 1));
     }
   }
 
